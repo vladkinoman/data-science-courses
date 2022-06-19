@@ -23,7 +23,7 @@ The subjective prob. def.:
 
 ## Formal definitions
 
-Random experiment is anything that has an uncertain outcome:
+Random experiment is the process leading to an uncertain outcome:
 
 - ex.: weather next Monday, stock price Tuesday.
 
@@ -110,4 +110,50 @@ First die rolls and shows up a 1, that doesn't affect the second die! The outcom
 - Two events A&B indep. if event A occurring or not occurring does not affect the prob. event B occurring.
 - It's ease to calc. the prob of the intersect of two events:
   P (A ∩ B) = P(A and B) = P(A) * P(B).
+
+## Subjective probabilities
+
+ex.: c - 1, most likely in feminist movements
+
+P (A ∩ B) ≤ P(A), P (A ∩ B) ≤ P(B), 
+
+The subject prob. must obey this rule.
+
+ex.: "works in bank and is active in the fem movement" must be ranked below c and f. Ranked: c, f, and then h.
+
+**conjunction fallacy**, we think incorrectly. Tversky Amos, Kahneman Daniel (Oct 1983): "Extension versus intuitive reasoning: The conjunction fallacy in probability judgment." -> influential in behavioral economics.
+
+## Empirical probabilities
+
+Look at historical data to estim. prob based on obser. in the real world.
+
+Leading digits 1..9 are non-uniformly distributed: there is a logarithmic pattern.
+
+**Benford's Law**:
+
+Frequency of "d" being the first digit,
+
+P(d) =log_10 (1+1/d), d є {1, 2, ...,9}
+
+ex. P(1) = 0.301, P(2) = 0.176.... decreasing.
+
+The law holds for rel. freq. probab. Ex.:credit cards bills, observed in stock markets (stock index), population data.
+
+There are some requirements: data should not have an arbitrary maximum or minimum values. And the law does not apply to numbers that are assigned, so in assigned grades, in assigned phone numbers, in assigned identity  numbers, it doesn’t hold.
+
+Proportions of emp. prob ~ Benford's law: the proportions are pretty well approximated by Benford's law.
+
+BLaw is used:
+
+- A lot in fraud detection: Nigrini Mark J "A taxpayer compliance application of Benford's Law". Whether people cheat or not. 
+  - Ex. They can hide money in other accounts.
+  - Ex. Greece doctored it's budget so the country could join the Euro.
+
+## Exercise
+
+Asteroid's field: 90% of asteroids, 10% of air; 30% of small asteroids, 70% of big asteroids.
+
+small asteroid -> able to fly through
+
+big asteroid -> :skull_and_crossbones:
 
