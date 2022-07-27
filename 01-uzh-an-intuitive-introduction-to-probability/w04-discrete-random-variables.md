@@ -101,3 +101,84 @@ How to understand? A: if I repeat that experiment many times, then the average w
 >
 > If p is high = buy the insurance, if p is small = you shouldn't buy the insurance.
 
+**Measures of dispersion**
+
+limited mind, so we like to aggregate all of this info, the possible variables, the possible p. into a single number. But there's a drawback! We lose a ton of info. 
+
+> Ex. μ=3.5 - no indication about the **variation** in the actual numbers
+>
+> We have bars, 6 different numbers, there is uncertainty, there's only a 1 in 6 chance of them coming, but 3.5 doesn't give me any of that info.
+>
+> μ of 6 diffrent numbers = μ of die with three 1s and three 6s.
+
+Sam Savage of Stanford University: "the flaw of averages". People rely too much on averages and ignore variation.
+
+Simple average deviation:
+
+Given μ = E(x) .
+
+Take the difference E(X-μ) = (x1 - μ)p(x1) + (x2 - μ)p(x2) + ... + (xk-μ)p(xk)
+
+This concept of average deviation doesn't work b/c: E(X-μ) = 0.
+
+Mean absolute deviation:
+
+MAD = E(|X-μ|) = |x1 - μ|p(x1) + |x2 - μ|p(x2) + ... + |xk-μ|p(xk)
+
+Doesn't work in practice, b/c the abs value isn't easy, It has a kink at 0. Language of math: it has a non-differentiability at 0.
+
+Squaring the numbers!
+
+**Variance** of discrete random variable is the probability-weighted sum of all possible squared deviations from the mean.
+
+> A deviation of a -2 gives a +4 squared deviation, a dev of a +2 gives us a +4 sq. dev. No more canceling of negatives and positives.
+
+Suppose X has k possible values, x1, x2, ..., xk, then the variance of X is
+
+σ^2 = Var(X) =  E((X-μ)^2) = (x1 - μ)^2p(x1) + (x2 - μ)^2p(x2) + ... + (xk-μ)^2p(xk)
+
+How to get from squared euros to just euros? With the square root.
+
+So, the standard deviation  σ = SD(X) = sqrt(Var(X)).
+
+Standard deviation is a measure (based on the variance) for the average deviation of the values of a random variable X from its mean μ.
+
+Our preferred summary measures for variation, or in economics and finance people like to talk about volatility, are the concepts variances and standard deviation.
+
+**Financial model**
+
+If anyone mentions it, they mean random variables.
+
+They use economic models to forecast to handle economic or financial risks.
+
+We see empirical probabilities.
+
+![](w04-model-of-an-investment-fund.png)
+
+Investors are interested in sum metrics, not this numbers.
+
+Expected return:
+
+- fund return: 
+
+random variable R with 6 possible values
+
+- expected return:
+
+E(R) = (-15) x 0.02 + (-7.5) x 0.05 + ... + 14 x 0.2 = 4.95%
+
+Again, we loss information. We now need to model the volatility (we use variance and stddev).
+
+Variance of the return:
+
+Var(R) = (-15-4.95)^2 x 0.02 + (-7.5-4.95)^2 x 0.05 + ... + (14-4.95)^2 x 0.2 
+
+= 43.8975
+
+According to our fin. model, the variance of the investment fund's return is 43.8975%^2 ("percent square").
+
+Stddev of the return:
+
+σ = sqrt(Var(R)) ~ 6.6255
+
+Stddev is measure for volatility in economics and finance.
